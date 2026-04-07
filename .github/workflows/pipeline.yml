@@ -1,5 +1,9 @@
 name: Pipeline
 
+env:
+  # Opt in to Node 24 runtime for JavaScript-based actions.
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   push:
     branches:
@@ -44,14 +48,14 @@ jobs:
         run: npm run build
 
       - name: Upload Pages artifact
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && vars.ENABLE_PAGES_DEPLOY == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
     name: Deploy to GitHub Pages
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && vars.ENABLE_PAGES_DEPLOY == 'true'
     needs: ci
     runs-on: ubuntu-latest
     environment:
