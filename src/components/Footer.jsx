@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <p>© {new Date().getFullYear()} Limpio360 - All rights reserved.</p>
+        <p>©2026 Limpio360 - All rights reserved.</p>
       </div>
     </footer>
   )

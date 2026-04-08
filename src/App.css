@@ -27,19 +27,15 @@
 }
 
 .nav-inner {
-  min-height: 72px;
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  min-height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.brand {
-  color: #0f766e;
-  font-size: 1.2rem;
-  font-weight: 800;
-  text-decoration: none;
-}
 
 .nav-links {
   display: flex;
@@ -208,16 +204,33 @@
   background: #16a34a;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  height: auto;
+  width: 150px;
+}
+
 @media (max-width: 768px) {
   .nav-inner {
-    min-height: 64px;
+    min-height: 76px;
     flex-wrap: wrap;
+    align-items: flex-start;
     padding: 0.45rem 0;
   }
 
   .nav-links {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     padding-bottom: 0.4rem;
+  }
+
+  .brand-logo {
+    width: 130px;
   }
 }

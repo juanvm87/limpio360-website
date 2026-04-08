@@ -2,7 +2,7 @@ function FloatingWhatsApp() {
   return (
     <a
       className="whatsapp-float"
-      href="https://wa.me/573000000000?text=Hello%20Limpio360,%20I%20need%20information"
+      href="https://wa.me/918826457035?text=Hello%20Limpio360,%20I%20need%20information"
       target="_blank"
       rel="noreferrer"
       aria-label="Open WhatsApp"

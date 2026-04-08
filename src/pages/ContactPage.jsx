@@ -6,7 +6,7 @@ function ContactPage() {
         <p>Schedule your service and get a quick quote.</p>
         <ul className="contact-list">
           <li>
-            <strong>Phone:</strong> +57 300 000 0000
+            <strong>Phone:</strong> <a>+91 88264 57035</a>
           </li>
           <li>
             <strong>Email: </strong>
@@ -18,7 +18,7 @@ function ContactPage() {
         </ul>
         <a
           className="btn"
-          href="https://wa.me/573000000000?text=Hello%20Limpio360,%20I%20would%20like%20a%20quote"
+          href="https://wa.me/918826457035?text=Hello%20Limpio360,%20I%20would%20like%20a%20quote"
           target="_blank"
           rel="noreferrer"
         >

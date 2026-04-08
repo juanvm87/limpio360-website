@@ -27,7 +27,7 @@ function HomePage() {
         <div className="container">
           <h2>Our main services</h2>
           <div className="grid">
-            {services.map((item) => (
+            {services.slice(0, 3).map((item) => (
               <article key={item.title} className="card">
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
