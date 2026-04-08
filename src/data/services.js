@@ -4,8 +4,8 @@ const services = [
     text: 'We keep your home spotless with weekly, biweekly, or one-time plans.',
   },
   {
-    title: 'Commercial Cleaning',
-    text: 'Offices, clinics, and storefronts always presentable for clients and staff.',
+    title: 'Construction Cleaning',
+    text: 'Post-construction cleaning to remove dust, debris, and residues before move-in.',
   },
   {
     title: 'Deep Cleaning',
